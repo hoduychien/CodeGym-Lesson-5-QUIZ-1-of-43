@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar</title>
+  </head>
+  <style>
+    * {
+      font-family: "Roboto", sans-serif;
+    }
+    th,td {
+      border: 1px solid black;
+    }
+    table {
+      margin: 50px auto;
+      border-collapse: collapse;  
+    }
+
+    th,
+    td {
+      width: inline-block;
+      min-width: 100px;
+      padding: 5px 10px;
+    }
+
+    sub {
+      color: #000;
+      font-size: 12px;
+    }
+    th:nth-child(1) {
+      color: red;
+    }
+    th:nth-child(7) {
+      color: blue;
+    }
+
+    tr:nth-child(1) > th:nth-child(1) {
+      color: blue;
+      font-size: 30px;
+      font-weight: bold;
+      border: none;
+    }
+
+    tr:nth-child(2) > th{
+      border: none;
+      border-spacing: 2px;
+    }
+
+    tr:nth-child(3) > th{
+      border: none;
+      font-weight: 100;
+    }
+
+    tr:nth-child(2) > th:nth-child(1) {
+      background-color: red;
+      color: #fff;
+    }
+
+    tr:nth-child(2) > th:nth-child(7) {
+      background-color: blue;
+      color: #fff;
+    }
+
+    tr:nth-child(2) {
+      background-color: orange;
+      color: #fff; border: none;
+    }
+
+    tr:nth-child(3) {
+      font-weight: 100;
+    }
+
+  </style>
+  <body>
+    <table>
+      <tr>
+        <th colspan="7">Tháng 10 - October</th>
+      </tr>
+      <tr>
+        <th>Chủ Nhật</th>
+        <th>Thứ 2</th>
+        <th>Thứ 3</th>
+        <th>Thứ 4</th>
+        <th>Thứ 5</th>
+        <th>Thứ 6</th>
+        <th>Thứ 7</th>
+      </tr>
+      <tr>
+        <th>Sun</th>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>Thu</th>
+        <th>Fri</th>
+        <th>Sat</th>
+      </tr>
+      <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th>1<sub>13</sub></th>
+        <th>2<sub>14</sub></th>
+        <th>3<sub>15</sub></th>
+      </tr>
+      <tr>
+        <th>4<sub>16</sub></th>
+        <th>5<sub>17</sub></th>
+        <th>6<sub>18</sub></th>
+        <th>7<sub>19</sub></th>
+        <th>8<sub>20</sub></th>
+        <th>9<sub>21</sub></th>
+        <th>10<sub>22</sub></th>
+      </tr>
+      <tr>
+        <th>11<sub>23</sub></th>
+        <th>12<sub>24</sub></th>
+        <th>13<sub>25</sub></th>
+        <th>14<sub>26</sub></th>
+        <th>15<sub>27</sub></th>
+        <th>16<sub>28</sub></th>
+        <th>17<sub>29</sub></th>
+      </tr>
+      <tr>
+        <th>18<sub>1.9</sub></th>
+        <th>19<sub>2</sub></th>
+        <th>20<sub>3</sub></th>
+        <th>21<sub>4</sub></th>
+        <th>22<sub>5</sub></th>
+        <th>23<sub>6</sub></th>
+        <th>24<sub>7</sub></th>
+      </tr>
+      <tr>
+        <th>25<sub>8</sub></th>
+        <th>26<sub>9</sub></th>
+        <th>27<sub>10</sub></th>
+        <th>28<sub>11</sub></th>
+        <th>29<sub>12</sub></th>
+        <th>30<sub>13</sub></th>
+        <th>31<sub>14</sub></th>
+      </tr>
+    </table>
+  </body>
+</html>
