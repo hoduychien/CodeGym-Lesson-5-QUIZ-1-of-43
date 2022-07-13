@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My hobby</title>
+  </head>
+
+  <style>
+    body{
+        background-color: rgb(214 254 255);
+    }
+    form {
+      width: 400px;
+      margin: auto;
+      background-color: #fff;
+    }
+    .title {
+      font-size: 20px;
+      background-color: #ff6900;
+      color: #fff;
+      width: 400px;
+    }
+    .right {
+      text-align: right;
+      vertical-align: top;
+      color: blue;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <form action="">
+        <table>
+          <thead>
+            <tr>
+              <th class="title" colspan="2">Sở thích cá nhân</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td class="right">
+                <label for="name">Họ và tên </label>
+              </td>
+              <td>
+                <input name="name" type="text" style="width:250px;"/>
+              </td>
+            </tr>
+            <tr>
+              <td class="right">
+                <label for="email">Email </label>
+              </td>
+              <td>
+                <input name="email" type="text" />
+              </td>
+            </tr>
+            <tr>
+              <td class="right">
+                <label for="">Sở thích </label>
+              </td>
+              <td>
+                <table style="color: red">
+                  <tr>
+                    <td><input type="radio" name="hobby" /> Thể Thao</td>
+                    <td><input type="radio" name="hobby" /> Âm nhạc</td>
+                    <td><input type="radio" name="hobby" /> Đọc sách</td>
+                  </tr>
+
+                  <tr>
+                    <td><input type="radio" name="hobby" /> Lướt web</td>
+                    <td><input type="radio" name="hobby" /> Chơi game</td>
+                    <td><input type="radio" name="hobby" /> Điện ảnh</td>
+                  </tr>
+                  <tr>
+                    <td><input type="radio" name="hobby" /> Du lich</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <input type="submit" value="Gửi thông tin" />
+                <input type="submit" value="Nhập lại" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
