@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: auto;
+      font-family: "Poppins", sans-serif;
+    }
+    form {
+      margin: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    td,
+    th {
+      min-width: 170px;
+      height: 50px;
+      border: 1px solid rgb(124, 124, 124);
+    }
+    th {
+      text-align: left;
+    }
+
+    td {
+      text-align: center;
+    }
+
+    tr:nth-child(odd) {
+      background-color: rgb(218, 218, 218);
+    }
+
+    tr:nth-child(even) {
+      background-color: #fff;
+    }
+
+    .strong-label {
+      font-weight: 600;
+    }
+
+    select {
+      width: 500px;
+    }
+    textarea {
+      width: 100%;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-weight: 500;
+    }
+    hr {
+      margin-bottom: 20px;
+    }
+    .button-submit {
+      width: inline-block;
+      padding: 0 30px;
+      font-size: 20px;
+      font-weight: 500;
+    }
+  </style>
+  <body>
+    <form action="#">
+      <h2>Market Research Survey</h2>
+      <p>Please take a few moments to complete this satisfaction survey.</p>
+      <hr />
+
+      <ul>
+        <li>
+          <div>
+            <label class="strong-label" for="">What is your age range?</label
+            ><br />
+            <select name="age" id="">
+              <option value="18-24">18-24</option>
+              <option value="25-34">25-34</option>
+              <option value="35-50">35-50</option>
+              <option value="50+">50+</option>
+            </select>
+          </div>
+        </li>
+        <li>
+          <div>
+            <label class="strong-label" for=""
+              >What is your yearly income range?</label
+            ><br />
+            <select name="price" id="">
+              <option value="$0 - $25,000">$0 - $25,000</option>
+              <option value="$25,001 - $50,000">$25,001 - $50,000</option>
+              <option value="$50,001 - $100,000">$50,001 - $100,000</option>
+              <option value="$100,000+">$100,000+</option>
+            </select>
+          </div>
+        </li>
+        <li>
+          <div>
+            <label class="strong-label" for="gender">Gender Identity</label
+            ><br />
+            <input type="radio" name="gender" id="male" value="Male" />
+            <label for="male">Male</label> <br />
+            <input type="radio" name="gender" id="female" value="Female" />
+            <label for="female">Femanle</label> <br />
+            <input type="radio" name="gender" id="nonbinary" value="Nonbinary"/>
+            <label for="nonbinary">Nonbinary</label> <br />
+            <input type="radio" name="gender" id="other" value="Other" />
+            <label for="other">Other</label> <br />
+            <input type="text" />
+          </div>
+        </li>
+        <li>
+          <div>
+            <label class="strong-label" for=""
+              >Which of the following products have your purchased in the last 2
+              months. Please check all that apply.</label
+            ><br />
+            <input
+              type="checkbox"
+              id="product1"
+              name="product1"
+              value="Product 1"
+            />
+            <label for="product1"> Product 1</label><br />
+            <input
+              type="checkbox"
+              id="product2"
+              name="product2"
+              value="Product 2"
+            />
+            <label for="product2"> Product 2</label><br />
+            <input
+              type="checkbox"
+              id="product3"
+              name="product3"
+              value="Product 3"
+            />
+            <label for="product3"> Product 3</label><br />
+          </div>
+        </li>
+        <li>
+          <div>
+            <label class="strong-label" for=""
+              >How often would you use our new product?</label
+            ><br />
+            <input type="radio" name="often" id="Daily" value="Daily" />
+            <label for="Daily">Daily</label> <br />
+            <input type="radio" name="often" id="Weekly" value="Weekly" />
+            <label for="Weekly">Weekly</label> <br />
+            <input type="radio" name="often" id="Monthly" value="Monthly" />
+            <label for="Monthly">Monthly</label> <br />
+          </div>
+        </li>
+        <li>
+          <div>
+            <label class="strong-label" for=""
+              >What would you pay for the new product? </label
+            ><br />
+            <span>$</span>
+            <span>
+              <input type="text" name="Dollars" />
+              <label for="Dollars">Dollars</label>
+            </span>
+            <span>.</span>
+            <span>
+              <input type="text" name="Cents" />
+              <label for="Cents">Cents</label>
+            </span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <label class="strong-label" for=""
+              >What features would you like to see in the new product.</label
+            ><br />
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+        </li>
+        <li>
+          <div>
+            <table>
+              <p>
+                Please rate your level of agreement with the following
+                statements.
+              </p>
+              <tr>
+                <td></td>
+                <td>Strongly Disagree</td>
+                <td>Disagree</td>
+                <td>Agree</td>
+                <td>Strongly Agree</td>
+              </tr>
+              <tr>
+                <th>Our products are priced fairly.</th>
+                <td><input type="radio" name="number-line-1" /><br />l</td>
+                <td><input type="radio" name="number-line-1" /><br />2</td>
+                <td><input type="radio" name="number-line-1" /><br />3</td>
+                <td><input type="radio" name="number-line-1" /><br />4</td>
+              </tr>
+
+              <tr>
+                <th>Our products are high quality.</th>
+                <td><input type="radio" name="number-line-2" /><br />1</td>
+                <td><input type="radio" name="number-line-2" /><br />2</td>
+                <td><input type="radio" name="number-line-2" /><br />3</td>
+                <td><input type="radio" name="number-line-2" /><br />4</td>
+              </tr>
+
+              <tr>
+                <th>
+                  You would recommend our product to a friend or coworker.
+                </th>
+                <td><input type="radio" name="number-line-3" /><br />1</td>
+                <td><input type="radio" name="number-line-3" /><br />2</td>
+                <td><input type="radio" name="number-line-3" /><br />3</td>
+                <td><input type="radio" name="number-line-3" /><br />4</td>
+              </tr>
+            </table>
+          </div>
+        </li>
+        <li>
+          <div>
+            <input type="submit" value="Submit" class="button-submit" />
+          </div>
+        </li>
+      </ul>
+    </form>
+  </body>
+</html>
