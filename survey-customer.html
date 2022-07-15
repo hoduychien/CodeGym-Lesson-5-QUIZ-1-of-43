@@ -25,6 +25,7 @@
     th {
       min-width: 170px;
       height: 50px;
+      padding: 0 10px;
       border: 1px solid rgb(124, 124, 124);
     }
     th {
@@ -76,6 +77,13 @@
       font-size: 20px;
       font-weight: 500;
     }
+    .Dollars{
+      float: left;
+    }
+    .pay {
+      width: inline-block;
+      align-items: center;
+    }
   </style>
   <body>
     <form action="#">
@@ -117,11 +125,16 @@
             <label for="male">Male</label> <br />
             <input type="radio" name="gender" id="female" value="Female" />
             <label for="female">Femanle</label> <br />
-            <input type="radio" name="gender" id="nonbinary" value="Nonbinary"/>
+            <input
+              type="radio"
+              name="gender"
+              id="nonbinary"
+              value="Nonbinary"
+            />
             <label for="nonbinary">Nonbinary</label> <br />
             <input type="radio" name="gender" id="other" value="Other" />
             <label for="other">Other</label> <br />
-            <input type="text" />
+            <input type="text" style="margin-left: 15px;"/>
           </div>
         </li>
         <li>
@@ -134,21 +147,21 @@
               type="checkbox"
               id="product1"
               name="product1"
-              value="Product 1"
+              value="Product1"
             />
             <label for="product1"> Product 1</label><br />
             <input
               type="checkbox"
               id="product2"
               name="product2"
-              value="Product 2"
+              value="Product2"
             />
             <label for="product2"> Product 2</label><br />
             <input
               type="checkbox"
               id="product3"
               name="product3"
-              value="Product 3"
+              value="Product3"
             />
             <label for="product3"> Product 3</label><br />
           </div>
@@ -167,20 +180,22 @@
           </div>
         </li>
         <li>
-          <div>
-            <label class="strong-label" for=""
-              >What would you pay for the new product? </label
-            ><br />
-            <span>$</span>
-            <span>
-              <input type="text" name="Dollars" />
-              <label for="Dollars">Dollars</label>
-            </span>
-            <span>.</span>
-            <span>
-              <input type="text" name="Cents" />
-              <label for="Cents">Cents</label>
-            </span>
+          <label class="strong-label" for="">What would you pay for the new product? </label><br />
+          <div class="pay">
+            <div class="Dollars">
+              <span>$</span>
+              <span>
+                <input type="text" name="Dollars" /><br />
+                <label for="Dollars" style="margin-left: 14px">Dollars</label>
+              </span>
+            </div>
+            <div class="Cents">
+              <span style="margin: 0 10px;">.</span>
+              <span>
+                <input type="text" name="Cents"style="width: 60px" /><br/>
+                <label for="Cents" style="margin-left: 28px" >Cents</label>
+              </span>
+            </div>
           </div>
         </li>
         <li>
